@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Vue JS App</title>
+
+    <link href="~/assets/twitter-bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/assets/twitter-bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="~/assets/toastr.js/toastr.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container body-content">
+        @RenderBody()
+    </div>
+
+    <script src="~/assets/jquery/jquery.min.js"></script>
+    <script src="~/assets/twitter-bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/assets/toastr.js/toastr.min.js"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
